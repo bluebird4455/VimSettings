@@ -1,0 +1,333 @@
+{
+    //----------------------------------------------------------
+    // VSCode Settings.json
+    // Update: 2025/06/25 09:30
+    //----------------------------------------------------------
+
+    // フォント
+    "editor.fontFamily": "'PlemolJP', Consolas, monospace",
+    // フォントサイズ
+    "editor.fontSize": 16,
+    // コードの一行が長くなるための可読性向上
+    "editor.wordWrap": "off",
+    // ミニマップはいらない
+    "editor.minimap.enabled": false,
+    // tabをデフォルトで4スペースにする
+    "editor.tabSize": 4,
+    // tabをスペースに変換する
+    "editor.insertSpaces": true,
+    // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+    "editor.renderWhitespace": "none",
+    // 時間のかかるフォーマットだとバグが出るのでfalse
+    "editor.formatOnSave": false,
+    //エディターで開くパンくずの設定
+    "breadcrumbs.enabled": false,
+    // 行番号を相対値で表示
+    "editor.lineNumbers": "relative",
+    //現在の行番号含めて強調表示する
+    "editor.renderLineHighlight" : "all",
+    // スニペットを候補の上部に表示する
+    "editor.snippetSuggestions": "top",
+    // プレフィックスが一致する場合はスニペットを挿入する
+    "editor.tabCompletion": "on",
+    "editor.cursorStyle": "line",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    // 差分比較時の空白文字扱いは無視
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    //----------------------------------------------------------
+    // Git
+    //----------------------------------------------------------
+    "git.autofetch": true,
+    "git.ignoreRebaseWarning": true,
+
+    //----------------------------------------------------------
+    // 作業環境の設定(おもにタブの設定をvimと近づけるために設定)
+    //----------------------------------------------------------
+    // エディターのラベルの書式を制御します。例としてこの設定を変更することでファイルの場所を理解しやすくなります:
+    // - short: 'parent'
+    // - medium: 'workspace/src/parent'
+    // - long: '/home/user/workspace/src/parent'
+    // - default: '.../parent', 　別タブで、同じタイトルを共有する場合や、相対的なワークスペース パス タブが無効になっている場合
+    "workbench.editor.labelFormat": "short",
+    // 任意の表示グループが開かれた場合に、そこにエディターを表示するかどうかを制御します。無効にした場合、エディターは現在のアクティブなエディター グループに優先して開かれます。有効にした場合は、現在のアクティブなエディター グループにもう一度開くのではなく、既に開いているエディターが表示されます。特定のグループ内や現在アクティブなグループの横に強制的にエディターを開いた場合などに、この設定が無視される場合もあることにご注意ください。
+    "workbench.editor.revealIfOpen": true,
+    // 開いているエディターをアイコンで表示するかどうかを制御します。これには、アイコンのテーマを有効にする必要もあります。
+    "workbench.editor.showIcons": false,
+    // 編集中のタブをハイライト
+    "workbench.editor.highlightModifiedTabs": true,
+    // エディターのタブの大きさを制御します。常に完全なエディター ラベルを表示するのに足りるタブの大きさを維持するには 'fit' を設定します。すべてのタブを一度に表示するには利用可能なスペースが足りない場合に、タブを縮小可能にするには 'shrink' を設定します。
+    "workbench.editor.tabSizing": "shrink",
+    // エディター タブの閉じるボタンの位置を制御するか、[off] に設定した場合に無効にします。
+    "workbench.editor.tabCloseButton": "off",
+    // todo エディターグループにアクティブなエディターが一つしか存在できない
+    // 前のセッションからエディターが復元されていない場合に、起動時に表示するかどうかを制御します。'none' を選択するとエディターなしで開始します。'welcomepage' を選択するとウェルカム ページを開きます (既定)。'newuntitledfile' を選択すると新しい無題のファイルを開きます (空のワークスペースを開いているときのみ)。
+    "workbench.startupEditor": "none",
+    // エディターを開く場所を制御します。'left' または 'right' を選択すると現在アクティブになっているエディターの左または右にエディターを開きます。'first' または 'last' を選択すると現在アクティブになっているエディターとは別個にエディターを開きます。
+    "workbench.editor.openPositioning": "first",
+    // アクティビティバーでよけいなスペースを取られるのでfalse
+    // "workbench.activityBar.visible": false,
+    // サイドバーのツリー検索でデフォルトの挙動をoffにする
+    "workbench.list.automaticKeyboardNavigation": false,
+    // [開いているエディター] ウィンドウに表示するエディターの数。
+    "explorer.openEditors.visible": 0,
+
+    //----------------------------------------------------------
+    //ワンセット
+    //タブで見えるようにしないと何が開いているのかわからない
+    "workbench.editor.showTabs": "multiple",
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    // { "key": "cmd+w", "command": "workbench.action.closeeditorsingroup" }
+    // { "key": "ctrl+tab", "command": "workbench.action.openpreviouseditorfromhistory" },
+    // { "key": "ctrl+tab", "command": "workbench.action.quickopennavigatenext", "when": "inquickopen" },
+    //----------------------------------------------------------
+
+    //----------------------------------------------------------
+    // debug
+    //----------------------------------------------------------
+    // デバッグ中にエディターの行内に変数値を表示します
+    "debug.inlineValues": "on",
+
+    //----------------------------------------------------------
+    // terminal
+    //----------------------------------------------------------
+    // 設定した場合、ターミナルで選択しているテキストはクリップボードにコピーされます。
+    "terminal.integrated.copyOnSelection": true,
+     // ターミナルのフォントサイズ
+    // "terminal.integrated.fontSize": 9,
+
+    //-----------------------------------------------------------------------------------------------------------
+    // 拡張機能
+    //-----------------------------------------------------------------------------------------------------------
+
+    //----------------------------------------------------------
+    // Vim
+    //----------------------------------------------------------
+    // systemのclipboardを使用します
+    "vim.useSystemClipboard": true,
+    // hlsearchは必要だと思う
+    "vim.hlsearch": true,
+    // 検索をするときに見やすいモッサりすることなければこのまま
+    "vim.easymotion": true,
+    // wordを* or + で検索するでしょ?
+    "vim.visualstar": true,
+    // 諸々のctrlキーを使った操作が有効になる
+    "vim.useCtrlKeys": true,
+    // ignore case in search patterns.
+    "vim.ignorecase": true,
+    // show where a / search matches as you type it.
+    "vim.incsearch": true,
+    // enable the sneak plugin for vim.
+    "vim.sneak": false,
+    // 移動
+    "vim.whichwrap": "h,l,<,>,[,],{,}",
+    // leaderキー設定
+    "vim.leader": "<space>",
+    // leaer->オペレータでCamel単位で選択
+    "vim.camelCaseMotion.enable": true,
+    // 折りたたみ箇所を開かないように変更
+    "vim.foldfix": true,
+
+    // 一文字目の色
+    "vim.easymotionMarkerForegroundColorOneChar": "rgba(255,255,43,1)",
+    // 背景色
+    "vim.easymotionMarkerBackgroundColor"       : "rgba(70, 200, 40, 0.9)",
+    // フォントの太さ
+    "vim.easymotionMarkerFontWeight" : "Bold",
+    // マーカーに使用される文字列
+    "vim.easymotionKeys" : "asdfghjklwertyuio;",
+
+    //----------------------------------------------------------
+    // Vim autoSwitchInputMethod
+    //   参考：https://qiita.com/iuchi/items/9ddcfb48063fc5ab626c
+    //         https://github.com/iuchim/zenhan
+    //----------------------------------------------------------
+    "vim.autoSwitchInputMethod.enable": true,
+    "vim.autoSwitchInputMethod.defaultIM": "0",
+    "vim.autoSwitchInputMethod.obtainIMCmd": "C:\\Tool\\zenhan\\bin64\\zenhan.exe 0",
+    "vim.autoSwitchInputMethod.switchIMCmd": "C:\\Tool\\zenhan\\bin64\\zenhan.exe {im}",
+
+    //----------------------------------------------------------
+    // Vim KeyBind(Normal Mode) 再マッピングなし
+    //----------------------------------------------------------
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            // ノーマルモードで[f]を押すとeasymotion発動
+            "before": ["f"],
+            "after": ["leader", "leader", "s"]
+        },
+        {
+            // デフォルトの"H"/"L"は使いどころが難しいので、よく使うキーを割り当て
+            // "^"はQwertyキー配列で押しずらいので、"H"で行頭
+            "before": ["H"],
+            "after": ["^"]
+        },
+        {
+            // "$"はQwertyキー配列で押しずらいので、"L"で行末
+            "before": ["L"],
+            "after": ["$"]
+        },
+        {
+            // 現在の行の下に空行を挿入
+            "before": ["<Leader>", "o"],
+            "after": ["o", "<ESC>"]
+        },
+        {
+            // 現在の行の上に空行を挿入
+            "before": ["<Leader>", "O"],
+            "after": ["O", "<ESC>"]
+        },
+        {
+            // 検索結果にジャンプしたとき画面中央に表示する
+            "before": ["n"],
+            "after": ["n", "z", "z"]
+        },
+        {
+            "before": ["N"],
+            "after": ["N", "z", "z"]
+        },
+        {
+            "before": ["*"],
+            "after": ["*", "z", "z"]
+        },
+        {
+            "before": ["#"],
+            "after": ["#", "z", "z"]
+        },
+    ],
+
+    //----------------------------------------------------------
+    // Vim KeyBind(Insert Mode)
+    //----------------------------------------------------------
+    "vim.insertModeKeyBindings": [
+        {
+            // [jj]でNormal Modeに戻る
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            // [Ctrl + h]で左に移動
+            "before": ["<C-h>"],
+            "after": ["<Left>"]
+        },
+        {
+            // [Ctrl + j]で下に移動
+            "before": ["<C-j>"],
+            "after": ["<Down>"]
+        },
+        {
+            // [Ctrl + k]で上に移動
+            "before": ["<C-k>"],
+            "after": ["<Up>"]
+        },
+        {
+            // [Ctrl + l]で右に移動
+            "before": ["<C-l>"],
+            "after": ["<Right>"]
+        }
+    ],
+
+    //----------------------------------------------------------
+    // Vim KeyBind(Normal Mode)
+    //----------------------------------------------------------
+    "vim.normalModeKeyBindings": [
+        {
+            // [Y]でカーソル位置から行末までコピー
+            "before": ["Y"],
+            "after": ["y", "$"]
+        },
+        {
+            // 前のタブを表示
+            "before": ["C-h"],
+            "commands": [ "workbench.action.previousEditor" ]
+        },
+        {
+            // 次のタブを表示
+            "before": ["C-l"],
+            "commands": [ "workbench.action.nextEditor" ]
+        },
+        {
+            // 前に戻る
+            "before": ["C-o"],
+            "commands": [ "workbench.action.navigateBack" ]
+        },
+        {
+            // 次に進む
+            "before": ["C-i"],
+            "commands": [ "workbench.action.navigateForward" ]
+        },
+    ],
+
+    //----------------------------------------------------------
+    // indent-rainbow
+    //----------------------------------------------------------
+    "indentRainbow.colors": [
+        "rgba(255,255,20,0.1)",
+        "rgba(255,55,255,0.1)",
+        "rgba(35,240,255,0.1)"
+    ],
+
+    //----------------------------------------------------------
+    // C#
+    //----------------------------------------------------------
+    // "[csharp]": {
+    //     "editor.defaultFormatter": "Leopotam.csharpfixformat"
+    //     "editor.defaultFormatter": "ms-dotnettools.csharp"
+    // },
+    // "omnisharp.organizeImportsOnFormat": true,
+    // "omnisharp.useModernNet": false,
+    // "omnisharp.path": "",
+    // "omnisharp.projectLoadTimeout": 180,
+    // "csharp.unitTestDebuggingOptions": {
+    // },
+
+    //----------------------------------------------------------
+    // python
+    //----------------------------------------------------------
+    // "python.pythonPath": "python3",
+    // "python.languageServer": "Pylance",
+    // "python.linting.pylintEnabled": true,
+    // "python.formatting.provider": "yapf",
+    // "python.formatting.yapfPath": "yapf",
+    // "autoDocstring.docstringFormat": "google",
+    // "[python]": {
+    //     "editor.formatOnSave": true, // 保存時に自動整形を行う
+    //     "editor.formatOnPaste": false, // ペースト時に自動整形を行わない
+    //     "editor.formatOnType": false, // 入力後に自動整形を行わない
+    // },
+    // "python.formatting.yapfArgs": [
+    //     // "--style={based_on_style: google, blank_line_before_class_docstring: True, blank_line_before_module_docstring: True}"
+    //     "--style={based_on_style: google, blank_line_before_nested_class_or_def: True}"
+    // ],
+    // "python.analysis.typeCheckingMode": "basic",
+
+    //----------------------------------------------------------
+    // Java
+    //----------------------------------------------------------
+    "redhat.telemetry.enabled": false,
+    "java.jdt.ls.java.home": "C:\\Tool\\jdk-21",
+    "maven.executable.path": "C:\\Tool\\apache-maven-3.9.9\\bin\\mvn.cmd",
+
+    //-----------------------------------------------------------------------------------------------------------
+    // その他
+    //-----------------------------------------------------------------------------------------------------------
+
+    //----------------------------------------------------------
+    // フォーマッタ
+    //----------------------------------------------------------
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    //----------------------------------------------------------
+    // 未整理 ※VSCode自動追加あり
+    //----------------------------------------------------------
+    // 思ったより邪魔なので無効化
+    // "markdown.extension.preview.autoShowPreviewToSide": true, // ファイルを開くと同時にプレビューも表示
+    // "markdown.preview.openMarkdownLinks": "inPreview",
+    // "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+
+}
