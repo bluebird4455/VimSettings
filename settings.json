@@ -1,7 +1,7 @@
 {
     //----------------------------------------------------------
     // VSCode Settings.json
-    // Update: 2025/06/25 09:30
+    // Update: 2025/08/15 11:35
     //----------------------------------------------------------
 
     // フォント
@@ -81,6 +81,9 @@
     // { "key": "ctrl+tab", "command": "workbench.action.openpreviouseditorfromhistory" },
     // { "key": "ctrl+tab", "command": "workbench.action.quickopennavigatenext", "when": "inquickopen" },
     //----------------------------------------------------------
+
+    // タブのプレビュー機能利用時に他ファイルを開く際の上書きを抑止。(常に別タブで開く設定)
+    "workbench.editor.tabActionCloseVisibility": false,
 
     //----------------------------------------------------------
     // debug
@@ -255,6 +258,11 @@
             // 次に進む
             "before": ["C-i"],
             "commands": [ "workbench.action.navigateForward" ]
+        },
+        {
+            // カーソリ移動が邪魔ため、設定無効化
+            "before": ["C-p"],
+            "commands": [ "workbench.action.quickOpen" ]
         },
     ],
 
